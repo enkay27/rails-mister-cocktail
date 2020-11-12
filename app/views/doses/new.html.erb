@@ -1,0 +1,7 @@
+<%= simple_form_for [@cocktail, @dose] do |f|%>
+<%= f.association :ingredient, collection: @ingredients, prompt: "Choose a ingredient" %>
+<%= f.text_field :description %>
+<%= f.submit %>
+<% end %>
+
+<%= link_to "Go back to cocktail", cocktail_path(@cocktail)  %>
