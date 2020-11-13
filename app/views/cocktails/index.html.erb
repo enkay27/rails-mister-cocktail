@@ -1,11 +1,11 @@
-<h1>All Cocktails</h1>
+<h1>Let's Browse through all the world famous Kochtails</h1>
 
-<ul>
-  <% @cocktails.each do |cocktail| %>
-  <li>
+<div class="container">
+  <p>
+    <% @cocktails.each do |cocktail| %>
     <%= link_to cocktail.name, cocktail_path(cocktail) %>
-  </li>
+  </p>
   <% end %>
-</ul>
+</div>
 
-<%= link_to "Create a new cocktail", new_cocktail_path  %>
+<div class="button">Create a new cocktail</div>

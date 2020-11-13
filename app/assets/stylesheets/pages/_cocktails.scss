@@ -2,15 +2,6 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
-
-@import "color-schemer";
-@import "compass";
-@import "breakpoint";
-@import "susy";
-
-h1 {
-  color: red;
-}
 body {
   background: #ebebeb;
 }
@@ -26,11 +17,11 @@ body {
   transform: translateX(-50%) translateY(-50%);
 
   background: #fff;
-  width: 100px;
+  width: 200px;
   padding: 20px 30px;
 
-  border: 5px solid #4ac0ee;
-  color: #4ac0ee;
+  border: 5px solid #F26268;
+  color: #F26268;
   font-weight: bold;
   text-transform: uppercase;
   text-align:center;
@@ -52,7 +43,7 @@ body {
     }
 
     &:before {
-        background: #4ac0ee;
+        background: #F26268;
         top: 10px;
         left: -15px;
         height: 100%;
@@ -61,14 +52,14 @@ body {
 
     &:after {
         width:100%;
-        background: #4ac0ee;
+        background: #F26268;
         right: 0px;
         left: -15px;
         height: 15px;
     }
 
     &:hover {
-      background: #4ac0ee;
+      background: #F26268;
       color: #fff;
       margin-left: -7.5px;
       margin-bottom: -7.5px;
@@ -91,6 +82,17 @@ body {
           left: 0px;
           height: 0px;
       }
-
-    }
 }
+}
+
+.container {
+  grid-template-columns: 100px 50px 100px;
+  grid-template-rows: 80px auto 80px;
+  column-gap: 10px;
+  row-gap: 15px;
+}
+
+div p {
+  color: #F26268;
+}
+
